@@ -3,7 +3,7 @@ var router = express.Router();
 var ObjectId = require('mongoose').Types.ObjectId;
 
 // declare variable for clients 
-var { Clients } = require('../models/clients');
+var { Clients } = require('../models/client');
 
 router.get('/', (req, res) => {
     Clients.find((err, docs) => {
